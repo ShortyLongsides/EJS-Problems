@@ -33,13 +33,21 @@ and returns the sum of these numbers.
 
 function Sum(numbersArr) {
     let sum = 0;
+    let i = 0;
+
+    numbersArr.forEach((index) => {
+        sum += index;
+    });
+
+
+    /*
     for(let i = 0; i < numbersArr.length; i++) {
         sum += numbersArr[i];
     }
+    */
     return sum;
+    
 }
 
 console.log(Sum(Range(1, 10)));
 // → 55
-
-//asdasd
